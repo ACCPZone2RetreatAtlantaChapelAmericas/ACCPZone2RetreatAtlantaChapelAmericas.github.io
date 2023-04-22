@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+  <script src="https://kit.fontawesome.com/d6ad1966f3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/all.css">
+  <title>Document</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg px-4">
+      <!-- <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a> -->
+      <a href="index.html" class="navbar-brand font">Atlanta <br> Chapel</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#formch">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+            <p class="mb-0"></p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto text-center"> <!--banner-->
+          <h1 style="font-style: italic; font-weight: bold; font-size: 50px;">ZONE 2 RETREAT</h1>
+          <h4 style="font-size: 40px;">July 28-30, 2023 <br> ATLANTA CHAPEL</h4>
+          <!-- <a href="#store" class="btn banner-link text-uppercase my-2">explore</a> -->
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header -->
+  <section class="container-fluid my-4 py-5">
+    <div class="text-center">
+
+      <h3 style="text-decoration: underline;">THEME:</h3>
+      <h2>"BOND OF LOVE & <br> UNITY IN CHRIST"</h2>
+      <h3>COLOSSIANS 3:14 & PSALM 133:1</h3>
+    </div>
+  </section>
+
+
+
+  <section class="get_in_touch container-fluid" id="formch">
+    <h1 class="title">Sign up For Retreat</h1>
+
+    <form action="https://formspree.io/f/mwkjaozr" method="POST">
+      <div class="container">
+        <div class="contact-form row">
+          <div class="form-field col-lg-6">
+            <input type="text" name="name" class="form-control border-0" id="name" placeholder="Full-Name">
+            <!-- <label for="name" class="label">Name</label> -->
+          </div>
+          <div class="form-field col-lg-6">
+            <input type="text" name="email" class="form-control border-0" id="email" placeholder="Email address">
+            <!-- <label for="name" class="label">Email</label> -->
+          </div>
+          <div class="form-field col-lg-6">
+            <input type="text" name="chapel" class="form-control border-0" id="chapel" placeholder="Chapel`">
+            <!-- <label for="subject"class="label">Subject</label> -->
+          </div>
+          <div class="form-field  col-lg-6">
+            <input type="text" name="phone" class="form-control border-0" id="phone" placeholder="PhoneNo">
+            <!-- <label for="phone" class="label">PhoneNo</label> -->
+          </div>
+
+          <div class="col-lg-6  form-field">
+            <select class="form-select " name="post" id="post">
+              <option id="options" value="options">------Select one of these------</option>
+              <option id="Worker" value="Worker">Worker</option>
+              <option id="Member" value="Member">Member</option>
+            </select>
+          </div>
+
+          <div class="form-field col-lg-6">
+            <select class="form-select form-control " name="ages" id="ages">
+              <option id="bracket1" value="bracket1">-----Select an age range----</option>
+              <option id="1-14" value="1-14">1 - 14</option>
+              <option id="14-25" value="14-25">14 - 25</option>
+              <option id="25-45" value="25-45">25 - 45</option>
+              <option id="45-above" value="45-above">45 - above</option>
+            </select>
+          </div>
+
+          <div class="form-field col-lg-6">
+            <select class="form-select form-control " name="gender" id="gender">
+              <option id="opt1" value="opt1">-----Select a gender----</option>
+              <option id="male" value="male">Male</option>
+              <option id="female" value="female">Female</option>
+            </select>
+          </div>
+
+          <div class="form-field col-lg-12">
+            <input type="checkbox" id="family" name="family" value="family">
+            <label for="vehicle3"> Multiple participants</label>
+          </div>
+
+          <div class="form-field col-lg-12">
+            <input type="submit" class="submit-btn" value="submit">
+          </div>
+          <div class="form-field col-lg-12">
+
+            <a href="#" class="btn btn-info btn-lg">
+              <span class="glyphicon"><i class="fa fa-cloud"></i></span> Add Participant
+            </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+
+
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
