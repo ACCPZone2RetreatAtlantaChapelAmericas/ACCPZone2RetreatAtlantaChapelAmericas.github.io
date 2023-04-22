@@ -14,6 +14,26 @@
   <title>Document</title>
   <style>
   </style>
+
+  <script>
+    function popup() {
+      var popwindow = document.getElementById("checkBundle");
+      if (popwindow.style.display === "block") {
+        popwindow.style.display = "none";
+      } else {
+        popwindow.style.display = "block";
+      }
+    };
+
+    function popit() {
+      var popwindow = document.getElementById("FunStuff");
+      if (popwindow.style.display === "block") {
+        popwindow.style.display = "none";
+      } else {
+        popwindow.style.display = "block";
+      }
+    };
+  </script>
 </head>
 
 <body>
@@ -117,10 +137,45 @@
             </select>
           </div>
 
-          <div class="form-field col-lg-12">
-            <input type="checkbox" id="family" name="family" value="family">
-            <label for="vehicle3"> Multiple participants</label>
+          <div class="form-field col-lg-6">
+            <select class="form-select form-control " name="ETA" id="ETA">
+              <option id="opt2" value="opt2">-----Expected date of arrival----</option>
+              <option id="july27" value="july27">JULY 27th</option>
+              <option id="july28" value="july28">JULY 28th</option>
+              <option id="july29" value="july29">JULY 29th</option>
+            </select>
           </div>
+
+          <div class="form-field col-lg-12">
+            <input type="checkbox" id="MultipleParticipants" name="MultipleParticipants" onclick="popup(this)"
+              value="MultipleParticipants" />
+            <label for="vehicle3"> Multiple participants</label>
+            <ul style="display: none;" id="checkBundle">
+              <li style="list-style: none;"><label><input type="text" name="NO.OFPART" class="form-control border-0"
+                    id="NO.OFPART" placeholder="Number of Participants"></label></li>
+            </ul>
+          </div>
+
+          <div class="form-field col-lg-12">
+            <input type="checkbox" id="Activities" name="Activities" onclick="popit(this)" value="Activities" />
+            <label for="Activities"> Interested in Activities? Click here</label>
+            <ul style="display: none;" id="FunStuff">
+              <div style="margin-bottom: 2px; font-style: italic;">Check all that apply</div>
+              <li style="list-style: none;"> <input type="checkbox" id="TalentHunt" name="TalentHunt"
+                  value="TalentHunt" />
+                  <label for="TalentHunt"> Talent Hunt</label>
+              </li>
+              <li style="list-style: none;"> <input type="checkbox" id="SoccerMatch" name="SoccerMatch"
+                  value="SoccerMatch" />
+                  <label for="SoccerMatch"> Soccer Match</label>
+              </li>
+              <li style="list-style: none;"> <input type="checkbox" id="BibleQuiz" name="BibleQuiz"
+                  value="BibleQuiz" />
+                  <label for="BibleQuiz"> Bible Quiz</label>
+              </li>
+            </ul>
+          </div>
+
 
           <div class="form-field col-lg-12">
             <input type="submit" class="submit-btn" value="submit">
@@ -128,7 +183,7 @@
           <div class="form-field col-lg-12">
 
             <a href="#" class="btn btn-info btn-lg">
-              <span class="glyphicon"><i class="fa fa-cloud"></i></span> Add Participant
+              <span class="glyphicon"><i class="fa-solid fa-plus"></i></span> Add Participant
             </a>
             </p>
           </div>
